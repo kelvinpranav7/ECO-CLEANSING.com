@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | Food Waste Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-body">
+
+  <div class="login-card">
+    <h2>Food Waste Management</h2>
+    <p class="tagline">Connecting surplus food to those in need</p>
+
+   <form id="loginForm">
+  <select id="role" required>
+    <option value="">Select Role</option>
+    <option value="admin">Admin</option>
+    <option value="hotel">Hotel / Hall</option>
+    <option value="ngo">NGO / Trust</option>
+  </select>
+
+  <input type="email" id="email" placeholder="Email address" required />
+  <input type="password" id="password" placeholder="Password" required />
+
+  <button type="submit">Login</button>
+</form>
+
+
+    <p class="hint">Admin / Trust / Hotel access only</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

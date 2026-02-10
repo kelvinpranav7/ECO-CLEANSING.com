@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard | Food Waste Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-body">
+
+  <!-- Sidebar -->
+ <ul id="menu">
+  <li class="active" data-page="home">Dashboard</li>
+
+  <li class="role-hotel" data-page="postFood">Post Food</li>
+  <li class="role-ngo" data-page="requests">Request Food</li>
+  <li class="role-admin" data-page="verify">Trust Verification</li>
+
+  <li id="logoutBtn">Logout</li>
+</ul>
+
+
+
+
+  <!-- Main Content -->
+ <main class="main-content">
+  <h1 id="pageTitle">Dashboard</h1>
+
+  <div id="home" class="page active-page">
+   <p>Welcome! You are logged in as <strong id="roleText"></strong>.</p>
+  </div>
+
+ <div id="postFood" class="page">
+  <h2>Post Food</h2>
+  <p>Hotels and halls can post surplus food here.</p>
+</div>
+
+<div id="requests" class="page">
+  <h2>Request Food</h2>
+  <p>NGOs can request food pickups here.</p>
+</div>
+
+<div id="verify" class="page">
+  <h2>Trust Verification</h2>
+  <p>Admin verifies NGO authenticity here.</p>
+</div>
+
+
+    <!-- Table -->
+    <div class="table-container">
+      <h2>Recent Food Listings</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Hotel / Hall</th>
+            <th>Food Type</th>
+            <th>Quantity</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Green Leaf Hotel</td>
+            <td>Veg</td>
+            <td>30 Plates</td>
+            <td class="status available">Available</td>
+          </tr>
+          <tr>
+            <td>SSS Function Hall</td>
+            <td>Mixed</td>
+            <td>50 Plates</td>
+            <td class="status collected">Collected</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="app.js"></script>
+
+
+</body>
+</html>
